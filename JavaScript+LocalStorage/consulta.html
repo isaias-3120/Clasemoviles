@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Alumnos<span class="sr-only">Alumnos</span></a>
+                    <a class="nav-link" href="./index.html">Juegos de GC<span class="sr-only">Alumnos</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Consulta<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Consulta de juegos<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
 
@@ -39,24 +39,36 @@
         <div class="row">
             
             <div class="form-group">
-                <label for="Input5">Carrera</label>
-                <select class="form-control " id="Input5"  onchange="readQ()">
-                    <option value="selecciona">selecciona</option>
-                    <option value="Informatica">Informatica</option>
-                    <option value="Sistemas">Sistemas</option>
-                    <option value="TICS">TICS</option>
+                <label for="Input6">Vale la pena?</label>
+                <select class="form-control " id="Input6"  onchange="readQ()">
+                    <option value="selecciona" hidden>Selecciona</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                    <option value="Talvez">Talvez</option>
+                </select>
+            </div>
+            <div>
+                <label for="Input7">ESRB Rating</label>
+                <select class="form-control " id="Input7"  onchange="readQ2()">
+                    <option value="selecciona" hidden>Selecciona</option>
+                    <option value="E">E</option>
+                    <option value="E+10">E+10</option>
+                    <option value="T">T</option>
+                    <option value="M">M</option>
+                    <option value="A">A</option>
                 </select>
             </div>  
             <div class="col-md-12">
-                <h3 style="text-align:center">Alumnos</h3>
+                <h3 style="text-align:center">Juegos de GameCube</h3>
 
                 <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col">Matrícula</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Carrera</th>
+                        <th scope="col">Identificador</th>
+                        <th scope="col">Nombre del juego</th>
+                        <th scope="col">Desarrollador</th>
+                        <th scope="col">ESRB</th>
+                        <th scope="col">Vale la pena?</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
                       </tr>
@@ -66,7 +78,7 @@
 
                     </tbody>
                   </table>
-                
+                         
             </div>
 
         </div>
